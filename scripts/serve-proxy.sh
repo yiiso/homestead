@@ -12,7 +12,7 @@ block="server {
         proxy_set_header Connection "upgrade";
         proxy_set_header Host \$host;
         proxy_http_version 1.1;
-        proxy_pass http://127.0.0.1:${2};
+        proxy_pass ${2};
     }
 
     access_log off;
